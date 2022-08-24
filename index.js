@@ -94,7 +94,7 @@ function nextPlayer(){
       // podrzet skore pro aktivniho hrace
       totalScore[activePlayer] = totalScore[activePlayer] + roundScore;
       document.querySelector('#totalScorePlayer-' + activePlayer).textContent = totalScore[activePlayer]
-      if(totalScore[activePlayer] >= 50) {
+      if(totalScore[activePlayer] >= 5) {
         document.querySelector("#player-" + activePlayer).textContent = "Winner!!!"
         document.querySelector('.diceImage').style.display = 'none';
         document.querySelector('#container').style.display = 'block';

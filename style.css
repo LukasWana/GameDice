@@ -166,23 +166,23 @@ body {
 }
 
 @-webkit-keyframes steam1 {
-  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
-  100% {transform: translateY(-400px) translateX(-20px) scale(1); opacity: 0;}
+  0% {transform: translateY(0) translateX(0) scale(0.125); opacity: 0.2;}
+  100% {transform: translateY(400px) translateX(-400px) scale(1); opacity: 0;}
 }
 
 @keyframes steam1 {
-  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
-  100% {transform: translateY(-400px) translateX(-20px) scale(1); opacity: 0;}
+  0% {transform: translateY(0) translateX(0) scale(0.125); opacity: 0.2;}
+  100% {transform: translateY(400px) translateX(400px) scale(1); opacity: 0;}
 }
 
 @-webkit-keyframes steam2 {
-  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
-  100% {transform: translateY(-400px) translateX(20px) scale(1); opacity: 0;}
+  0% {transform: translateY(0) translateX(0) scale(0.125); opacity: 0.2;}
+  100% {transform: translateY(400px) translateX(400px) scale(1); opacity: 0;}
 }
 
 @keyframes steam2 {
-  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
-  100% {transform: translateY(-400px) translateX(20px) scale(1); opacity: 0;}
+  0% {transform: translateY(0) translateX(0) scale(0.125); opacity: 0.2;}
+  100% {transform: translateY(400px) translateX(-400px) scale(1); opacity: 0;}
 }
 
 /* http://waitanimate.wstone.io/#!/ */
