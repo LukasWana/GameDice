@@ -67,7 +67,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   margin-left: 20px;
-  top: 35%;
+  top: 45%;
 }
 .currentScore1 {
   position: absolute;
@@ -75,7 +75,7 @@ body {
   height: 150px;
   background-color: rgba(255, 255, 255, 0.3);
   right: 20px;
-  top: 35%;
+  top: 45%;
 }
 .currentScore p:nth-child(2) {
   margin-top: -20px;
@@ -87,6 +87,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 .btn {
@@ -98,7 +99,11 @@ body {
   font-size: large;
 }
 
-.rollDice{
+.holdScore {
+  background-color:rgba(255, 255, 255, 0.3);
+}
+
+.rollDice {
   color: white;
   background-color: rgb(71, 12, 12);
 }
@@ -117,8 +122,8 @@ body {
 }
 
 .active {
-  background-color: rgb(71, 12, 12);
-  color: #fff;
+  background-color: #fff;
+  color: rgb(71, 12, 12);
   padding: 20px;
 }
 
@@ -178,4 +183,20 @@ body {
 @keyframes steam2 {
   0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
   100% {transform: translateY(-400px) translateX(20px) scale(1); opacity: 0;}
+}
+
+/* http://waitanimate.wstone.io/#!/ */
+.rollDice {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
 }

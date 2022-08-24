@@ -78,7 +78,7 @@ function nextPlayer(){
   if(activePlayer == 0) {
     setTimeout( function() {
       activePlayer = 1;
-    }, 900 );
+    }, 600 );
   } else {
       activePlayer = 0;
   }
