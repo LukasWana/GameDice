@@ -30,6 +30,7 @@ function newStart(){
   document.querySelector('.holdScore').style.display = 'block';
   document.querySelector('.currentScore0').style.display = 'block';
   document.querySelector('.currentScore1').style.display = 'block';
+  document.querySelector('.header').style.display = 'block';
 
   // vynulovani a schovani kostky
   document.getElementById('totalScorePlayer-0').textContent = 0;
@@ -110,6 +111,7 @@ function nextPlayer(){
         document.querySelector('.holdScore').style.display = 'none';
         document.querySelector('.currentScore0').style.display = 'none';
         document.querySelector('.currentScore1').style.display = 'none';
+        document.querySelector('.header').style.display = 'none';
         playGame = false;
       } else {
         nextPlayer();
