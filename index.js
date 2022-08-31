@@ -24,6 +24,12 @@ function newStart(){
   activePlayer = 0;
   playGame = true;
   document.querySelector('#container').style.display = 'none';
+  document.querySelector('body').style.background = '#d4a373';
+  document.querySelector('.playground').style.background = 'rgba(255, 255, 255, 0.3)';
+  document.querySelector('.rollDice').style.display = 'block';
+  document.querySelector('.holdScore').style.display = 'block';
+  document.querySelector('.currentScore0').style.display = 'block';
+  document.querySelector('.currentScore1').style.display = 'block';
 
   // vynulovani a schovani kostky
   document.getElementById('totalScorePlayer-0').textContent = 0;
@@ -95,9 +101,15 @@ function nextPlayer(){
       totalScore[activePlayer] = totalScore[activePlayer] + roundScore;
       document.querySelector('#totalScorePlayer-' + activePlayer).textContent = totalScore[activePlayer]
       if(totalScore[activePlayer] >= 5) {
-        document.querySelector("#player-" + activePlayer).textContent = "Winner!!!"
+        document.querySelector('#player-' + activePlayer).textContent = 'Winner!!!'
         document.querySelector('.diceImage').style.display = 'none';
         document.querySelector('#container').style.display = 'block';
+        document.querySelector('body').style.background = 'black';
+        document.querySelector('.playground').style.background = 'black';
+        document.querySelector('.rollDice').style.display = 'none';
+        document.querySelector('.holdScore').style.display = 'none';
+        document.querySelector('.currentScore0').style.display = 'none';
+        document.querySelector('.currentScore1').style.display = 'none';
         playGame = false;
       } else {
         nextPlayer();
